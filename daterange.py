@@ -7,4 +7,3 @@ for root, dirs, files in os.walk('data'):
         f = open(fp, 'r')
         for line in f:
             data = json.load(line)
-            
