@@ -22,6 +22,10 @@ for root,dirs, files in os.walk('data'):
 # sorted_dc = sorted(dateCount.items(),key=operator.itemgetter(1),reverse=True)
 
 file = open("datawithin2019-01-01-2019-01-02.txt", "w") 
+file.write('') 
+file.close() 
+
+file = open("datawithin2019-01-01-2019-01-02.txt", "w") 
 for i in txtdata:
     file.write(str(i) + '\n' ) 
 file.close() 
