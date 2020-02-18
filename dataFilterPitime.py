@@ -35,6 +35,23 @@ for root,dirs, files in os.walk('datalog'):
                 if 'temp_8' in data:
                     temp_8avgdata.append(data['temp_8'])
                     
-print(temp_5data)
-print(temp_8data)
+                     
+file = open("temp_5data2018-05-06T16:00:00-2018-05-06T18:00:00.txt", "w") 
+file.write('') 
+file.close() 
+
+file = open("temp_5data2018-05-06T16:00:00-2018-05-06T18:00:00.txt", "w") 
+for i in temp_5data:
+    file.write(str(i) + '\n' ) 
+file.close() 
+ 
+file = open("temp_8data2018-05-06T16:00:00-2018-05-06T18:00:00.txt", "w") 
+file.write('') 
+file.close() 
+
+file = open("temp_8data2018-05-06T16:00:00-2018-05-06T18:00:00.txt", "w") 
+for i in temp_8data:
+    file.write(str(i) + '\n' ) 
+file.close() 
+
 print(sum(temp_8avgdata)/len(temp_8avgdata)) 
