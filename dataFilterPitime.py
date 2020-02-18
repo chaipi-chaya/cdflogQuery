@@ -36,20 +36,20 @@ for root,dirs, files in os.walk('datalog'):
                     temp_8avgdata.append(data['temp_8'])
                     
                      
-file = open("temp_5data2018-05-06T16:00:00-2018-05-06T18:00:00.txt", "w") 
+file = open("result/temp_5data.txt", "w") 
 file.write('') 
 file.close() 
 
-file = open("temp_5data2018-05-06T16:00:00-2018-05-06T18:00:00.txt", "w") 
+file = open("result/temp_5data.txt", "w") 
 for i in temp_5data:
     file.write(str(i) + '\n' ) 
 file.close() 
  
-file = open("temp_8data2018-05-06T16:00:00-2018-05-06T18:00:00.txt", "w") 
+file = open("result/temp_8data.txt", "w") 
 file.write('') 
 file.close() 
 
-file = open("temp_8data2018-05-06T16:00:00-2018-05-06T18:00:00.txt", "w") 
+file = open("result/temp_8data.txt", "w") 
 for i in temp_8data:
     file.write(str(i) + '\n' ) 
 file.close() 
